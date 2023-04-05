@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A pretty accordion</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="accordion">
+        <div class="accordion-panel">
+          <h2 id="panel1-heading">
+            <button
+              class="accordion-trigger"
+              aria-controls="panel1-content"
+              aria-expanded="true"
+            >
+              <span class="accordion-title" id="panel1-title">Bonfire</span>
+              <svg aria-hidden="true" class="accordion-icon">
+                <use xlink:href="#bonfire"></use>
+              </svg>
+            </button>
+          </h2>
+
+          <div
+            class="accordion-content"
+            id="panel1-content"
+            aria-labelledby="panel1-heading"
+            aria-hidden="false"
+            role="region"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              atque eos quia fuga dolorum non, quas illum nam ducimus.
+              Architecto quos quod ab, similique aspernatur numquam a neque
+              necessitatibus nisi.
+            </p>
+            <img src="./img/fire.jpg" alt="Bonfire" class="accordion-image" />
+          </div>
+        </div>
+
+        <div class="accordion-panel">
+          <h2 id="panel2-heading">
+            <button
+              class="accordion-trigger"
+              aria-controls="panel2-content"
+              aria-expanded="false"
+            >
+              <span class="accordion-title" id="panel2-title">Hiking</span>
+              <svg aria-hidden="true" class="accordion-icon">
+                <use xlink:href="#hiking"></use>
+              </svg>
+            </button>
+          </h2>
+
+          <div
+            class="accordion-content"
+            id="panel2-content"
+            aria-labelledby="panel2-heading"
+            aria-hidden="true"
+            role="region"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              vel aliquid est quibusdam molestiae dignissimos? Repudiandae,
+              minima illum nihil aliquid ea doloremque? Repellat, eveniet non
+              aliquam eum reprehenderit, delectus similique consequuntur ratione
+              ea nemo temporibus sint. Veniam voluptatum sunt quas blanditiis
+              asperiores, illo aliquam deserunt soluta sapiente hic nam ea
+              obcaecati vitae quos animi nesciunt sit quod inventore reiciendis
+              ducimus earum nisi vel culpa quidem? Quam id repellendus nesciunt
+              dolorum impedit blanditiis tempore? Quia recusandae modi sed et
+              laborum, officia nam enim. Eligendi ab vitae omnis porro quod
+              deleniti voluptatem exercitationem perspiciatis temporibus, fugit
+              dignissimos asperiores nihil.
+            </p>
+            <img src="./img/hiking.jpg" alt="Hiking" class="accordion-image" />
+          </div>
+        </div>
+
+        <div class="accordion-panel">
+          <h2 id="panel3-heading">
+            <button
+              class="accordion-trigger"
+              aria-controls="panel3-content"
+              aria-expanded="false"
+            >
+              <span class="accordion-title" id="panel3-title">Mountains</span>
+              <svg aria-hidden="true" class="accordion-icon">
+                <use xlink:href="#mountain"></use>
+              </svg>
+            </button>
+          </h2>
+          <div
+            class="accordion-content"
+            id="panel3-content"
+            aria-labelledby="panel3-heading"
+            aria-hidden="true"
+            role="region"
+          >
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cum
+              laudantium commodi temporibus amet itaque modi.
+            </p>
+            <img
+              src="./img/mountain.jpg"
+              alt="Mountains"
+              class="accordion-image"
+            />
+          </div>
+        </div>
+
+        <div class="accordion-panel">
+          <h2 id="panel4-heading">
+            <button
+              class="accordion-trigger"
+              aria-controls="panel4-content"
+              aria-expanded="false"
+            >
+              <span class="accordion-title" id="panel4-title">Snow</span>
+              <svg aria-hidden="true" class="accordion-icon">
+                <use xlink:href="#snow"></use>
+              </svg>
+            </button>
+          </h2>
+          <div
+            class="accordion-content"
+            id="panel4-content"
+            aria-labelledby="panel4-heading"
+            aria-hidden="true"
+            role="region"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              autem eum, doloribus minus nobis cupiditate obcaecati illo
+              veritatis laborum tempora harum magni? Sequi quis quisquam nobis,
+              similique ea minus nulla?
+            </p>
+            <img src="./img/snow.jpg" alt="Snow" class="accordion-image" />
+          </div>
+        </div>
+
+        <div class="accordion-panel">
+          <h2 id="panel5-heading">
+            <button
+              class="accordion-trigger"
+              aria-controls="panel5-content"
+              aria-expanded="false"
+            >
+              <span class="accordion-title" id="panel5-title">Water</span>
+              <svg aria-hidden="true" class="accordion-icon">
+                <use xlink:href="#water"></use>
+              </svg>
+            </button>
+          </h2>
+          <div
+            class="accordion-content"
+            id="panel5-content"
+            aria-labelledby="panel5-heading"
+            aria-hidden="true"
+            role="region"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Similique cumque saepe at officiis voluptas ipsa laudantium quis
+              fugit ut aperiam! Provident repellat odio odit! Aspernatur numquam
+              eos laborum dolorum dolor.
+            </p>
+            <img src="./img/water.jpg" alt="Water" class="accordion-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg width="0" height="0" class="hidden">
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        id="bonfire"
+      >
+        <path
+          d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+        id="hiking"
+      >
+        <path
+          d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V397.3l-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208H336V184c0-13.3 10.7-24 24-24s24 10.7 24 24v55.8c0 .1 0 .2 0 .2s0 .2 0 .2V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V272H296.6c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59h4.2c15.6 0 27.1 14.7 23.3 29.8z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 512"
+        id="mountain"
+      >
+        <path
+          d="M560 160A80 80 0 1 0 560 0a80 80 0 1 0 0 160zM55.9 512H381.1h75H578.9c33.8 0 61.1-27.4 61.1-61.1c0-11.2-3.1-22.2-8.9-31.8l-132-216.3C495 196.1 487.8 192 480 192s-15 4.1-19.1 10.7l-48.2 79L286.8 81c-6.6-10.6-18.3-17-30.8-17s-24.1 6.4-30.8 17L8.6 426.4C3 435.3 0 445.6 0 456.1C0 487 25 512 55.9 512z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        id="snow"
+      >
+        <path
+          d="M224 0c17.7 0 32 14.3 32 32V62.1l15-15c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-49 49v70.3l61.4-35.8 17.7-66.1c3.4-12.8 16.6-20.4 29.4-17s20.4 16.6 17 29.4l-5.2 19.3 23.6-13.8c15.3-8.9 34.9-3.7 43.8 11.5s3.8 34.9-11.5 43.8l-25.3 14.8 21.7 5.8c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17l-67.7-18.1L287.5 256l60.9 35.5 67.7-18.1c12.8-3.4 26 4.2 29.4 17s-4.2 26-17 29.4l-21.7 5.8 25.3 14.8c15.3 8.9 20.4 28.5 11.5 43.8s-28.5 20.4-43.8 11.5l-23.6-13.8 5.2 19.3c3.4 12.8-4.2 26-17 29.4s-26-4.2-29.4-17l-17.7-66.1L256 311.7v70.3l49 49c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V449.9l-15 15c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l49-49V311.7l-61.4 35.8-17.7 66.1c-3.4 12.8-16.6 20.4-29.4 17s-20.4-16.6-17-29.4l5.2-19.3L48.1 395.6c-15.3 8.9-34.9 3.7-43.8-11.5s-3.7-34.9 11.5-43.8l25.3-14.8-21.7-5.8c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4 29.4-17l67.7 18.1L160.5 256 99.6 220.5 31.9 238.6c-12.8 3.4-26-4.2-29.4-17s4.2-26 17-29.4l21.7-5.8L15.9 171.6C.6 162.7-4.5 143.1 4.4 127.9s28.5-20.4 43.8-11.5l23.6 13.8-5.2-19.3c-3.4-12.8 4.2-26 17-29.4s26 4.2 29.4 17l17.7 66.1L192 200.3V129.9L143 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l15 15V32c0-17.7 14.3-32 32-32z"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+        id="water"
+      >
+        <path
+          d="M269.5 69.9c11.1-7.9 25.9-7.9 37 0C329 85.4 356.5 96 384 96c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 149.7 417 160 384 160c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4C42.8 92.6 61 83.5 75.3 71.6c11.1-9.5 27.3-10.1 39.2-1.7l0 0C136.7 85.2 165.1 96 192 96c27.5 0 55-10.6 77.5-26.1zm37 288C329 373.4 356.5 384 384 384c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 437.7 417 448 384 448c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 373.2 165.1 384 192 384c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0zm0-144C329 229.4 356.5 240 384 240c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 293.7 417 304 384 304c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.5 27.3-10.1 39.2-1.7l0 0C136.7 229.2 165.1 240 192 240c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"
+        ></path>
+      </symbol>
+    </svg>
+  </body>
+</html>
